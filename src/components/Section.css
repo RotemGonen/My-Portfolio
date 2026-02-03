@@ -1,0 +1,13 @@
+.section .section-title {
+  margin-bottom: var(--space-lg);
+}
+
+.section + .section {
+  padding-top: var(--space-2xl);
+}
+
+@media (min-width: 768px) {
+  .section + .section {
+    padding-top: var(--space-3xl);
+  }
+}

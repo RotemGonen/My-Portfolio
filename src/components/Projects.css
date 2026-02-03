@@ -1,0 +1,26 @@
+.projects-grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+@media (min-width: 600px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-title {
+  margin: 0 0 var(--space-sm);
+  font-size: 1.125rem;
+  color: var(--color-text);
+}
+
+.project-desc {
+  font-size: 0.9375rem;
+  margin-bottom: var(--space-md);
+}
+
+.project-link {
+  font-size: 0.875rem;
+  font-weight: 500;
+}

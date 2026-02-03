@@ -1,0 +1,7 @@
+.about-card p code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  background: var(--color-bg-elevated);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+}

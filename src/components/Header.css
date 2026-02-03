@@ -1,0 +1,120 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 var(--space-lg);
+  background: rgba(15, 15, 18, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 100;
+}
+
+.header-logo {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--color-text);
+}
+
+.header-logo:hover {
+  color: var(--color-accent);
+}
+
+.header-menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: var(--space-sm);
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-menu-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: var(--color-text);
+  border-radius: 2px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.header-menu-btn[aria-expanded="true"] .header-menu-icon:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.header-menu-btn[aria-expanded="true"] .header-menu-icon:nth-child(2) {
+  opacity: 0;
+}
+
+.header-menu-btn[aria-expanded="true"] .header-menu-icon:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.header-nav {
+  position: fixed;
+  top: var(--header-height);
+  left: 0;
+  right: 0;
+  background: var(--color-bg-elevated);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 0.25s, opacity 0.25s, visibility 0.25s;
+}
+
+.header-nav--open {
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.header-nav-link {
+  display: block;
+  padding: var(--space-md);
+  color: var(--color-text-muted);
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-link:hover {
+  color: var(--color-accent);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+/* Desktop: horizontal nav, hide hamburger */
+@media (min-width: 768px) {
+  .header-menu-btn {
+    display: none;
+  }
+
+  .header-nav {
+    position: static;
+    flex-direction: row;
+    gap: var(--space-sm);
+    padding: 0;
+    background: transparent;
+    border: none;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header-nav-link {
+    padding: var(--space-sm) var(--space-md);
+    min-height: auto;
+  }
+}
