@@ -34,13 +34,16 @@
   padding: var(--space-sm) var(--space-md);
   font-size: 0.875rem;
   font-weight: 500;
-  color: var(--color-text);
-  background: var(--color-bg-card);
-  border: 1px solid var(--color-border);
+  color: var(--skill-text, var(--color-text));
+  background: var(--skill-bg, var(--color-bg-card));
+  border: 1px solid var(--skill-border, var(--color-border));
   border-radius: var(--radius-md);
+  transition: transform 0.15s ease, border-color 0.2s ease, color 0.2s ease,
+    background-color 0.2s ease;
 }
 
 .skill-tag:hover {
-  border-color: var(--color-accent);
-  color: var(--color-accent);
+  transform: translateY(-1px);
+  border-color: var(--skill-text, var(--color-accent));
+  color: var(--skill-text, var(--color-accent));
 }
