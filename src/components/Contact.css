@@ -1,25 +1,31 @@
+.contact-card {
+  text-align: center;
+}
+
 .contact-intro {
   margin-bottom: var(--space-lg);
 }
 
-.contact-links {
+.contact-icons {
   display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-md);
+  justify-content: center;
+  gap: var(--space-lg);
 }
 
-.contact-link {
+.contact-icon-link {
   display: inline-flex;
   align-items: center;
-  min-height: 44px;
-  padding: 0 var(--space-md);
-  font-weight: 500;
-  border-radius: var(--radius-sm);
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-md);
   border: 1px solid var(--color-border);
-  transition: border-color 0.2s, color 0.2s;
+  transition: border-color 0.2s, color 0.2s, transform 0.15s;
 }
 
-.contact-link:hover {
+.contact-icon-link:hover {
   border-color: var(--color-accent);
   color: var(--color-accent);
+  transform: translateY(-2px);
 }
