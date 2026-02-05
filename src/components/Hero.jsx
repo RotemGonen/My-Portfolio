@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section id="hero" className="hero">
       <img
-        src="/profile.png"
+        src="/My-Portfolio/profile.png"
         alt="Rotem Gonen"
         className="hero-photo"
       />

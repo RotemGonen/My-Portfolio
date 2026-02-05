@@ -1,10 +1,11 @@
 # Dependencies
 node_modules
 
-# Build output
+# Build output (when building to dist folder)
 dist
 dist-ssr
 *.local
+# Note: Built files (index.html, assets/) in root are tracked for GitHub Pages
 
 # Logs
 logs
