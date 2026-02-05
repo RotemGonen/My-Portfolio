@@ -1,0 +1,37 @@
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.education-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.education-degree {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--color-text);
+}
+
+.education-period {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.education-institution {
+  font-size: 0.9375rem;
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.education-details {
+  font-size: 0.9375rem;
+  margin: 0;
+}
+

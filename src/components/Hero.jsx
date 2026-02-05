@@ -11,9 +11,7 @@ export default function Hero() {
       <h1 className="hero-title">
         Rotem Gonen
       </h1>
-      <p className="hero-subtitle">
-        Role or tagline — edit this in <code>src/components/Hero.jsx</code>
-      </p>
+    
       <div className="hero-actions">
         <a href="#contact" className="hero-cta">
           Get in touch
