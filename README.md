@@ -19,8 +19,9 @@ npm install
 | Command     | Description              |
 | ----------- | ------------------------ |
 | `npm run dev`    | Start dev server (e.g. http://localhost:5173) |
-| `npm run build`  | Production build → `dist/` |
+| `npm run build`  | Production build (output in project root) |
 | `npm run preview` | Preview production build locally |
+| `npm run deploy` | Build, then commit and push built files to GitHub |
 | `npm run lint`   | Run ESLint                |
 
 ## Project structure
@@ -32,6 +33,15 @@ src/
   main.jsx          # Entry point
   components/       # Section and layout components
 ```
+
+## Deploy to https://rotemg-portfolio.com
+
+The app uses **relative base paths** (`base: './'`) so the same build works on both GitHub Pages and your custom domain.
+
+1. **GitHub Pages**: Repo → Settings → Pages → Source: **main** branch, **/ (root)**.
+2. **Custom domain**: `public/CNAME` contains `rotemg-portfolio.com`; it is copied to the root on build and must be committed when you deploy.
+3. **Deploy**: Run `npm run deploy`. This builds (overwrites `index.html` with the built version, copies `public/` to root), then commits and pushes `index.html`, `assets/`, `CNAME`, `profile.png`, `vite.svg`, `.nojekyll`.
+4. **After deploy**: Local `index.html` is the built one. Run `npm run dev` to restore the source `index.html` from `index.source.html` and start the dev server.
 
 ## First-time setup before commit
 
