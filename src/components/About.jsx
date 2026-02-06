@@ -9,8 +9,7 @@ export default function About() {
     <Section id="about" title="About">
       <div ref={cardRef} className={`card about-card ${isVisible ? 'fade-in' : ''}`}>
         <p>
-          Add a short bio here. Who you are, what you do, and what you care about.
-          Edit <code>src/components/About.jsx</code> to update this section.
+        Passionate about technology, automation, and data-driven solutions. Always looking for new challenges and opportunities to grow.
         </p>
       </div>
     </Section>

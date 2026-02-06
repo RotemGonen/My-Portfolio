@@ -4,17 +4,11 @@ import './Education.css';
 
 const EDUCATION_ITEMS = [
   {
-    degree: 'Your degree',
-    institution: 'University or school name',
-    period: 'YYYY – YYYY',
-    details: 'Short description of your focus, achievements, or relevant coursework.',
-  },
-  {
-    degree: 'Certification or course',
-    institution: 'Platform / organization',
-    period: 'YYYY',
-    details: 'Optional: briefly describe what you learned or the skills you gained.',
-  },
+    degree: 'B.Sc. in Information System Management',
+    institution: 'The Academic College of Tel Aviv - Yafo',
+    period: '2020 - 2023',
+    details: 'Dean’s List, 3rd Year (Academic Excellence)'
+  }
 ];
 
 function EducationCard({ item }) {

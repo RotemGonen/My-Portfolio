@@ -4,6 +4,17 @@
   gap: var(--space-md);
 }
 
+.experience-card-logo {
+  margin-bottom: var(--space-sm);
+}
+
+.experience-card-logo img {
+  height: 2rem;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .experience-card-header {
   display: flex;
   flex-wrap: wrap;
@@ -29,7 +40,7 @@
   color: var(--color-accent);
   margin-bottom: var(--space-sm);
 }
-
+/*
 .experience-desc {
   font-size: 0.9375rem;
   margin: 0;
