@@ -40,14 +40,14 @@ The app uses **relative base paths** (`base: './'`) so the same build works on b
 
 1. **GitHub Pages**: Repo → Settings → Pages → Source: **main** branch, **/ (root)**.
 2. **Custom domain**: `public/CNAME` contains `rotemg-portfolio.com`; it is copied to the root on build and must be committed when you deploy.
-3. **Deploy**: Run `npm run deploy`. This builds (overwrites `index.html` with the built version, copies `public/` to root), then commits and pushes `index.html`, `assets/`, `CNAME`, `profile.png`, `vite.svg`, `.nojekyll`.
+3. **Deploy**: Run `npm run deploy`. This builds (overwrites `index.html` with the built version, copies `public/` to root), then commits and pushes `index.html`, `assets/`, `CNAME`, `profile.png`, `favicon.svg`, `.nojekyll`.
 4. **After deploy**: Local `index.html` is the built one. Run `npm run dev` to restore the source `index.html` from `index.source.html` and start the dev server.
 
 ## First-time setup before commit
 
 - Replace placeholder content in `src/components/` (Hero, About, Experience, Skills, Projects, Contact).
-- Update `index.html` title and meta if needed.
-- Add your own favicon in `public/` and reference it in `index.html`.
+- Update `index.source.html` for title and favicon link (that file is copied to `index.html` on deploy).
+- Add your own favicon in `public/` and reference it in `index.source.html`.
 
 ## License
 
