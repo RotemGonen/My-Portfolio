@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section id="hero" className="hero">
       <img
-        src="/My-Portfolio/profile.png"
+        src={`${import.meta.env.BASE_URL}profile.png`}
         alt="Rotem Gonen"
         className="hero-photo"
       />
