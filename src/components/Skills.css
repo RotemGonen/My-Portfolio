@@ -33,7 +33,7 @@
   display: inline-block;
   padding: var(--space-sm) var(--space-md);
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--skill-text, var(--color-text));
   background: var(--skill-bg, var(--color-bg-card));
   border: 1px solid var(--skill-border, var(--color-border));

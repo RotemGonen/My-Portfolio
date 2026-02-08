@@ -3,18 +3,18 @@ import { useFadeIn } from '../hooks/useFadeIn';
 import './Skills.css';
 
 const SKILL_COLOR_PALETTE = [
-  { bg: 'rgba(14, 165, 233, 0.12)', border: 'rgba(14, 165, 233, 0.35)', text: '#7dd3fc' }, // sky
-  { bg: 'rgba(168, 85, 247, 0.12)', border: 'rgba(168, 85, 247, 0.35)', text: '#d8b4fe' }, // purple
-  { bg: 'rgba(34, 197, 94, 0.12)', border: 'rgba(34, 197, 94, 0.35)', text: '#86efac' }, // green
-  { bg: 'rgba(245, 158, 11, 0.12)', border: 'rgba(245, 158, 11, 0.35)', text: '#fcd34d' }, // amber
-  { bg: 'rgba(244, 63, 94, 0.12)', border: 'rgba(244, 63, 94, 0.35)', text: '#fda4af' }, // rose
-  { bg: 'rgba(99, 102, 241, 0.12)', border: 'rgba(99, 102, 241, 0.35)', text: '#c7d2fe' }, // indigo
-  { bg: 'rgba(20, 184, 166, 0.12)', border: 'rgba(20, 184, 166, 0.35)', text: '#5eead4' }, // teal
-  { bg: 'rgba(234, 179, 8, 0.12)', border: 'rgba(234, 179, 8, 0.35)', text: '#fde68a' }, // yellow
-  { bg: 'rgba(239, 68, 68, 0.12)', border: 'rgba(239, 68, 68, 0.35)', text: '#fecaca' }, // red
-  { bg: 'rgba(16, 185, 129, 0.12)', border: 'rgba(16, 185, 129, 0.35)', text: '#6ee7b7' }, // emerald
-  { bg: 'rgba(6, 182, 212, 0.12)', border: 'rgba(6, 182, 212, 0.35)', text: '#67e8f9' }, // cyan
-  { bg: 'rgba(251, 113, 133, 0.12)', border: 'rgba(251, 113, 133, 0.35)', text: '#fecdd3' }, // pink
+  { bg: 'rgba(14, 165, 233, 0.15)', border: 'rgba(14, 165, 233, 0.4)', text: '#0369a1' }, // sky - darker blue
+  { bg: 'rgba(168, 85, 247, 0.15)', border: 'rgba(168, 85, 247, 0.4)', text: '#7c3aed' }, // purple - darker purple
+  { bg: 'rgba(34, 197, 94, 0.15)', border: 'rgba(34, 197, 94, 0.4)', text: '#15803d' }, // green - darker green
+  { bg: 'rgba(245, 158, 11, 0.15)', border: 'rgba(245, 158, 11, 0.4)', text: '#d97706' }, // amber - darker amber
+  { bg: 'rgba(244, 63, 94, 0.15)', border: 'rgba(244, 63, 94, 0.4)', text: '#dc2626' }, // rose - darker red
+  { bg: 'rgba(99, 102, 241, 0.15)', border: 'rgba(99, 102, 241, 0.4)', text: '#4338ca' }, // indigo - darker indigo
+  { bg: 'rgba(20, 184, 166, 0.15)', border: 'rgba(20, 184, 166, 0.4)', text: '#0d9488' }, // teal - darker teal
+  { bg: 'rgba(234, 179, 8, 0.15)', border: 'rgba(234, 179, 8, 0.4)', text: '#ca8a04' }, // yellow - darker yellow
+  { bg: 'rgba(239, 68, 68, 0.15)', border: 'rgba(239, 68, 68, 0.4)', text: '#b91c1c' }, // red - darker red
+  { bg: 'rgba(16, 185, 129, 0.15)', border: 'rgba(16, 185, 129, 0.4)', text: '#047857' }, // emerald - darker emerald
+  { bg: 'rgba(6, 182, 212, 0.15)', border: 'rgba(6, 182, 212, 0.4)', text: '#0891b2' }, // cyan - darker cyan
+  { bg: 'rgba(251, 113, 133, 0.15)', border: 'rgba(251, 113, 133, 0.4)', text: '#db2777' }, // pink - darker pink
 ];
 
 const TECHNICAL_SKILLS = [
